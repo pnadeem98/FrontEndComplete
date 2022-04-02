@@ -19,6 +19,9 @@ import { AddPayeeComponent } from './add-payee/add-payee.component';
 import { NeftComponent } from './neft/neft.component';
 import { RtgsComponent } from './rtgs/rtgs.component';
 
+import { MaterialModule } from './matrial-module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,8 @@ import { RtgsComponent } from './rtgs/rtgs.component';
     IMPSComponent,
     AddPayeeComponent,
     NeftComponent,
-    RtgsComponent
+    RtgsComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -42,8 +46,7 @@ import { RtgsComponent } from './rtgs/rtgs.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-
-
+    MaterialModule,
 
   ],
   providers: [],

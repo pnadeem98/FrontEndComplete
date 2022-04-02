@@ -1,65 +1,18 @@
-*{box-sizing: border-box}
+.example-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #555;
+  }
 
-#statement{
-    margin-left: 100px;;
-}
+  .bank-sidenav{
+    width: 240px;
+     border-right: 1px solid black;
+  }
 
-#statementform{
-    margin: 10px 10px;
-}
-
-table,th,td 
-{
-  margin: 10px 15px;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  padding: 16px;
- 
-}
-
-/* Style the tab */
-.tab
-{
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 250px;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button
-{
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover
-{
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active\
-{
-  background-color: #ccc;
-}
-#submit{
-    float: left;
-    margin: 25px 200px;
-    padding: 5px;
-    padding-left: 40px;
-    padding-right: 40px; 
-    border: 2px solid ; 
-    text-align: center;
-}
+  mat-sidenav-container {
+    height: calc(100vh - 98px);
+   }
+   
+   .mat-list-item{
+    color: white;
+   }
