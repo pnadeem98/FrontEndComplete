@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <title>LTI - Larsen & Toubro Infotech</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <div class="Overall">
+        <div class="header">
+            <h2>Open A Savings Account</h2>
+        </div>
+
+        <!-- <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="Login.html">Login</a>
+        </div>
+       -->
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div [hidden]="submitted" style="width: 400px;">
+                    <form [formGroup]="accountsaveform" #saveaccount (ngSubmit)="saveAccount(saveAccount)">
+
+                        <h3 style="text-align: center;">Personal Details</h3>
+
+
+                        <div class="container">
+                            <label for="titlename"><b>Title*</b></label>
+                            <select class="custom-select" input type="text" placeholder="Enter title" name="titlename"
+                                required>
+                                <option style='display:none' value=''></option>
+                                <option>Savings</option>
+                                <option>Regular</option>
+                            </select>
+                            <div class="form-group">
+
+                                <!-- <label for="customerid"><b>Customer Id*</b></label>
+                    <input type="number"formControlName="customerid" placeholder="Enter Customer Number" pattern="\d+" name="customerid" required > -->
+                                <!-- <div [formGroup]="accountsaveform"> -->
+
+                                <label for="firstname"><b>First Name*</b></label>
+                                <input type="text" class="form-control" formControlName="firstname"
+                                    placeholder="Enter First name" pattern="[a-zA-Z]" name="firstname" required
+                                    minlength="2" title="digits not allowed" required>
+                                <!-- <label for="mn"><b>Middle Name</b></label>
+                  <input type="text" placeholder="Enter middle name" pattern="[a-zA-Z]" name="mn" title="digits not allowed" > -->
+
+                                <label for="lastname"><b>Last Name*</b></label>
+                                <input type="text" class="form-control" formControlName="lastname"
+                                    placeholder="Enter Last name" pattern="[a-zA-Z]" name="lastname" required
+                                    minlength="2" title="digits not allowed" required>
+
+                                <!-- <label for="ffn"><b>Father's Name*</b></label>
+                  <input type="text" placeholder="Enter Father name" pattern="[a-zA-Z]" name="ffn" required minlength="2"title="digits not allowed" required > -->
+
+                                <label for="mobileno"><b>Mobile Number*</b></label>
+                                <input type="tel" class="form-control" formControlName="mobileno"
+                                    placeholder="Enter Mobile Number" name="mobileno" required>
+
+                                <label for="emailid"><b>Email id*</b></label>
+                                <input type="email" class="form-control" formControlName="emailid"
+                                    placeholder="someone@gmail.com" name="emailid" required>
+
+                                <label for="aadharno"><b>Aadhar Card Number*</b></label>
+                                <input type="number" class="form-control" formControlName="aadharno"
+                                    placeholder="Enter Aadhar Number" name="aadharno" required>
+
+                                <label for="dob"><b>Date Of Birth*</b></label>
+                                <input type="date" formControlName="dob" class="form-control" placeholder="Enter dob"
+                                    pattern="dd/mm/yyyy" name="dob" required>
+                            </div>
+                            <h6 class="text-primary">Residental Address*</h6>
+                            <div class="form-group">
+                                <label for="address"><b>Address Line </b></label>
+                                <input type="text" formControlName="address" class="form-control"
+                                    placeholder="Address Line" name="address" required>
+                            </div>
+                            <!-- <div class="form-group">
+                    <label for="pAddressLine2"><b>Address Line 2*</b></label>
+                      <input type="text" class="form-control" placeholder="Address Line 2" name="pAddressLine2" required>
+                  </div> -->
+                            <div class="form-group">
+                                <label for="landmark"><b>Landmark</b></label>
+                                <input type="text" formControlName="landmark" class="form-control"
+                                    placeholder="Landmark" name="landmark">
+                            </div>
+                            <div class="form-group">
+                                <label for="state"><b>State</b></label>
+                                <input type="text" formControlName="state" class="form-control" placeholder="State"
+                                    name="state" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><b>City</b></label>
+                                <input type="text" formControlName="city" class="form-control" placeholder="City"
+                                    name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pincode"><b>PinCode</b></label>
+                                <input type="text" formControlName="pincode" class="form-control" placeholder="Pincode"
+                                    pattern="\d{6}" name="pincode" required>
+                            </div>
+                            <h6 class="text-primary">Permanent Address*</h6>
+                            <div class="form-group">
+                                <label for="address"><b>Address Line </b></label>
+                                <input type="text" formControlName="address" class="form-control"
+                                    placeholder="Address Line " name="address" required>
+                            </div>
+                            <!-- <div class="form-group">
+        <label for="currAddressLine2"><b>Address Line 2*</b></label>
+          <input type="text" class="form-control" placeholder="Address Line 2" name="currAddressLine2" required>
+      </div> -->
+                            <div class="form-group">
+                                <label for="landmark"><b>Landmark</b></label>
+                                <input type="text" formControlName="landmark" class="form-control"
+                                    placeholder="Landmark" name="landmark">
+                            </div>
+                            <div class="form-group">
+                                <label for="state"><b>State</b></label>
+                                <input formControlName="state" class="form-control" placeholder="State" name="state"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><b>City</b></label>
+                                <input formControlName="city" class="form-control" placeholder="City" name="city"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pincode"><b>PinCode</b></label>
+                                <input formControlName="pincode" class="form-control" placeholder="Pincode"
+                                    name="pincode" required>
+                            </div>
+                            <h6 class="text-primary">Occupation Details</h6>
+                            <div class="form-group">
+                                <label for="occupationtype"><b>Occupation Type*</b></label>
+                                <!-- <input type="text" class="form-control" placeholder="Occupation type" name="occupationtype" required >    -->
+
+                                <select class="custom-select" input type="text" class="form-control"
+                                    placeholder="Occupation type" name="occupationtype" required>
+                                    <option style='display:none' value=''></option>
+                                    <option>Farmar</option>
+                                    <option>Government</option>
+                                    <option>Private</option>
+                                    <option>Ex-service man</option>
+                                    <option>others</option>
+                                </select>
+                            </div>
+                            <!-- <input type="text" class="form-control" placeholder="Occupation type" name="occupationtype" required> -->
+                            <div class="form-group">
+                                <label for="si"><b>Source of Income*</b></label>
+                                <select class="custom-select" input type="text" class="form-control"
+                                    placeholder="Source of Income" name="si" required>
+                                    <option style='display:none' value=''></option>
+                                    <option>salary</option>
+                                    <option>house</option>
+                                    <option>investment</option>
+                                </select>
+                            </div>
+                            <!-- <input type="text" class="form-control" placeholder="Source of Income" name="si" required> -->
+                            <div class="form-group">
+                                <label for="gi"><b>Gross Annual Income*</b></label>
+                                <select class="custom-select" input type="text" class="form-control"
+                                    placeholder="Gross Annual Income" name="gi" required>
+                                    <option style='display:none' value=''></option>
+                                    <option> below 100000</option>
+                                    <option> 100000 - 500000</option>
+                                    <option>above 500000</option>
+                                </select>
+                            </div>
+
+                            <label><b>Debit/ATM Card</b></label>
+                            <label><b>Do you want a debit card?</b> </label>
+
+                            <div class="form-group">
+                                <input type="checkbox" id="checkBox" required> <b> Opt for Net Banking </b>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="checkBox" required> <b> I agree......</b>
+                            </div>
+                            <a href="./success.html"><button class="send" type="submit" >Submit</button></a>
+                            <!-- <button class="send" type="submit" >Submit</button> -->
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

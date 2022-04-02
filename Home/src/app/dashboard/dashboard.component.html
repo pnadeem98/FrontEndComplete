@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+
+<p style="padding: 10px; border: 2px solid ; text-align: center;">Account Statement</p>
+</head>
+<body>
+    <br>
+    
+    <div class="tab">
+        <button class="tablinks">Account Details</button>
+        <button class="tablinks">Account Summmary</button>
+        <button class="tablinks"   routerLink="/fundtransfer" >Funds Transfer</button>
+        <button class="tablinks" >Account Statement</button>
+    </div>
+    <div id="AccountStatement" class="tabcontent">
+            
+            <p style="text-align:center">AccountStatement</p>
+            
+          </div>
+          
+        
+      
+      
+    <label for="Statement Form" id="statement">Statement Form:</label>
+    <input type="text" class="Statement Form" name="Statement Form" id="statementform">to<input type="text" id="statementform" name="Statement Form">
+
+        <table class="center" style="width:60%">
+                <tr>
+                    <th>Select</th>
+                    <th>Account Number</th>
+                    <th>Name</th>
+                    <th>Account Type</th>
+                    <th>Balance</th>
+                </tr>
+            <tr>
+            <td>
+                <input type="radio" name="select" checked>
+            </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    <br>
+    <input type="submit" value="Submit" id="submit" >
+</body>

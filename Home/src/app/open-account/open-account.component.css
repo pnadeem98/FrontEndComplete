@@ -1,0 +1,21 @@
+.Header {
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+}.header {
+    background-color: white;
+    padding:20px;
+    text-align: center;
+}
+.custom-select
+{
+    display: inline;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    background-color: #563d7c ;
+    color: white;
+
+ }
