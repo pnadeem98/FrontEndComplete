@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Register for internet banking</h1>
+  
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 position-relative">
+              <div>
+                <div class="row my-1 justify-content-between">
+                    <div class="col-4"> <label for="Account number"></label>Account number</div> -
+                    <div class="col-6"><input type="text" placeholder="Enter Account number" name="Account number" formControlName="accno"id="Account number" required></div>
+                </div>
+      
+                <div class="row my-1 justify-content-between">
+                  <div class="col-4"> <label for="Set login Password"></label>Set login Password</div> -
+                  <div class="col-6 position-relative"><input type="password" name="Set login Password" formControlName="loginpass" placeholder="Set login Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div>
+                </div>
+                <div class="row my-1 justify-content-between">
+                      <div class="col-4"> <label for="psw-repeat"></label>Confirm login Password</div> -
+                      <div class="col-6 position-relative"><input type="password" name="Confirm login Password" formControlName="confirmloginpsw" placeholder="Confirm login Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div>
+                </div>
+                 <div class="row my-1 justify-content-between">
+                       <div class="col-4"> <label for="Set transaction Password"></label>Set transaction Password</div> -
+                       <div class="col-6 position-relative"><input type="password" name="Set transaction Password" formControlName="transpass" placeholder="Set transaction Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div>
+                 </div>
+                 <div class="row my-1 justify-content-between">
+                      <div class="col-4"> <label for="psw-repeat"></label>Confirm transaction Password</div> -
+                     <div class="col-6 position-relative"><input type="password" name="Confirm transaction Password" formControlName="confirmtranspsw" placeholder="Confirm transaction Password" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></div>
+                 </div>
+                  <div class="row my-1 justify-content-between">
+                        <div class="col-4"> <label for="Enter OTP"></label>Enter OTP</div> -
+                        <div class="col-6"><input type="number" name="Enter OTP" formControlName="otp"required></div>
+                  </div>
+                  <div class="container termsandcond">
+                        <p> By creating an account you agree to our <a href="termsandcond">Terms & Privacy</a>.</p>
+                  </div>
+                  <div>
+                    <button type="submit"  class="mx-1" style="right: 139px; position:relative;"  routerLink="/"  >submit</button>
+                  </div>
+      
+                  <div class="container signin">
+                         <p>Already have an account? <a href="login">Login</a>.</p>
+                   </div>
+                   </div>
+               </div>
+          </div>
+    </div>
+</body>
+</html>

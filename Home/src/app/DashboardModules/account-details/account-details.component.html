@@ -1,0 +1,21 @@
+
+<table class="table table-striped" >
+<thead>
+<td scope="col">Account No</td>
+<td scope="col">Customer_ID</td>
+<td scope="col">Account Type</td>
+<td scope="col">Balance Amount</td>
+<td></td>
+</thead>
+<tbody *ngFor="let p of accList">
+<tr>
+<td scope="row">{{p.accNo}}</td>
+<td scope="row">{{p.customerId}}</td>
+<td scope="row">{{p.accType}}</td>
+<td scope="row">{{p.TotAmount}}</td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table>

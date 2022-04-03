@@ -1,0 +1,19 @@
+.add-new-btn{
+
+  position: absolute;
+  right: 60px;
+  top: 0px;
+}
+
+html, 
+body{ 
+ width: 100vw;
+ min-height: 100vh;
+}
+
+h1{
+  text-align: center;
+  padding: 10px;
+  background-color: #563d7c ;
+  color: white;
+}
